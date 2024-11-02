@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm sách</title>
+    <link rel="stylesheet" href="timkiemsach.css"> <!-- Liên kết đến tệp CSS -->
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="index.html" class="logo">THƯ VIỆN SÁCH</a> <!-- Logo của thư viện -->
+        <nav>
+            <ul>
+                <li><a href="timkiemsach.html">Trang chủ</a></li>
+                <li><a href="#" onclick="showAudiobookMessage()">Sách Nói</a></li> <!-- Thông điệp cho sách nói -->
+                <li><a href="#">Giới thiệu</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Nhập tên sách" class="search-input" aria-label="Tìm sách"> <!-- Ô tìm kiếm sách -->
+        <button class="search-btn" onclick="searchBooks()">Tìm kiếm</button> <!-- Nút tìm kiếm -->
+        <a href="mailto:info.thuvienpdf@gmail.com" class="contact-email">vuhoainam83@gmail.com</a> <!-- Liên hệ email -->
+    </div>
+</header>
+
+<main>
+    <aside class="sidebar" aria-label="Danh Mục Sách">
+        <h2>Danh mục</h2>
+        <ul>
+            <li><a href="sachgiaokhoa.html">Sách giáo khoa</a></li>
+            <li><a href="Truyenthieunhi.html">Truyện thiếu nhi</a></li>
+            <li><a href="#defense" onclick="showAudiobookMessage1()">Sách quốc phòng</a></li>
+            <li><a href="#others" onclick="showAudiobookMessage()">Sách khác</a></li>
+            <button onclick="window.location.href='themsach.html'" class="add-book-btn">Thêm sách</button>
+        </ul>
+    </aside>
+    
+    <section class="content">
+        <h2>Mới Cập Nhật</h2>
+        <div class="filter-buttons">
+            <button onclick="showAudiobookMessage()">Sách mới</button>
+            <button onclick="showAudiobookMessage()">Nổi bật tuần này</button>
+            <button onclick="showAudiobookMessage()">Sách download nhiều</button>
+        </div>
+    <section class="content">
+        <div class="book-list">
+            <div class="book-grid">
+                <!-- Mỗi cuốn sách là một item -->
+                <a href="book1.html" class="book-item">
+                    <img src="haibatrung(1).jpeg" alt="Sách 1">
+                    <h3>Trống Đồng - Tiểu Thuyết Lịch Sử Về Hai Bà Trưng</h3>
+                    <p>Tác Giả - Phong Nguyen</p>
+                </a>
+                
+                <a href="book2.html" class="book-item">
+                    <img src="tuduynhanhcham.jpeg" alt="Sách 2">
+                    <h3>Tư Duy Nhanh Và Chậm - Thinking Fast and Slow</h3>
+                    <p>Tác giả - Daniel Kahneman</p>
+                </a>
+                
+                <a href="book3.html" class="book-item">
+                    <img src="philytri.jpeg" alt="Sách 3">
+                    <h3>Phi Lý Trí - Khám Phá Những Động Lực Vô Hình Ẩn Sau Những Quyết Định Của Con Người</h3>
+                    <p>Tác giả - Dan Ariely</p>
+                </a>
+                
+                <a href="book4.html" class="book-item">
+                    <img src="thuchoem.jpeg" alt="Sách 4">
+                    <h3>Thư Cho Em - Chuyện tình tướng Hoàng Đan và vợ qua lời kể của con trai - Nhã Nam</h3>
+                    <p>Tác giả - Hoàng Nam Tiến</p>
+                </a>
+                
+                <a href="book5.html" class="book-item">
+                    <img src="matbiec.jpeg" alt="Sách 5">
+                    <h3>NNA - Mắt biếc - NXB Trẻ</h3>
+                    <p>Tác giả - Nguyễn Nhật Ánh</p>
+                </a>
+                
+                <a href="book6.html" class="book-item">
+                    <img src="kimlien1thua.jpg" alt="Sách 6">
+                    <h3>Kim Liên Một Thuở - Ký Ức Hà Nội Từ Những Khu Nhà Cũ</h3>
+                    <p>Tác giả - Vũ Công Chiến</p>
+                </a>
+                
+                <a href="book7.html" class="book-item">
+                    <img src="khuvuoncuajenny.png" alt="Sách 7">
+                    <h3>Khu Vườn Của Jenny</h3>
+                    <p>Tác giả - Trần Phương Hoa</p>
+                </a>
+                
+                <a href="book8.html" class="book-item">
+                    <img src="motnguoiditiep.jpeg" alt="Sách 8">
+                    <h3>Một Người Đi Tiếp, Một Người Quẩn Quanh - AZ Việt Nam</h3>
+                    <p>Tác Giả - Châu Sa Đáy Mắt</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+
+
+
+<script src="timkiemsach.js"></script> <!-- Liên kết đến tệp JavaScript -->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo-small.png" alt="Logo Thư Viện Sách PDF">
+        </div>
+        <div class="footer-info">
+            <p>📞 Số điện thoại: <a href="tel:+84987760082">+84 987760082</a></p>
+            <p>📧 Email: <a href="mailto:info.thuvienpdf@gmail.com">vuhoainam83@gmail.com</a></p>
+            <p>📍 Trung Học Cơ Sở Hương Lung</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
